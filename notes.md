@@ -72,6 +72,21 @@
 - `cp old_name new_name`
 	- = copy
 
+# Git
+## Cloning a repository
+The first time you download a local copy of a repositiory you have to use the command
+```shell
+git clone git@github.com:path-to-repo
+```
+
+## Pull changes
+To get the newest version of the repo use
+```shell
+git pull
+```
+
+## add new files
+
 # Python
 
 ## Core functionality
