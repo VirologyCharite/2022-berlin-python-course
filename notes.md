@@ -29,7 +29,9 @@
 	- Prints the current directory
 - `cd "directory"`
 	-  = change directory
-	- Instead of "directory" you can type `..` to move one folder up
+	- options 
+		- `..` to move one folder up
+		- `-` navigate to the last directory
 - `ln -s "existing-thing" "new-name"`
 	- = link
 	- generates a link
@@ -73,6 +75,12 @@
 	- = copy
 - `ssh-add`
 	- Adds a ssh-key to the key manager. You can confirm that the agent runs via 
+- `tr "from" "to"`
+	- `tr a-z A-Z` translates all small letters to large letters
+	- options
+		- -d deletes the following characters from the input
+		- -dc delete everything but
+
 
 # Git
 ## Cloning a repository
@@ -167,6 +175,9 @@ Methods
 Methods
 	- split(seperator) 
 	- ", ".join(list)   merges the elemtns of the list with the string between items of the list
+	- .lower() returns lowercase of the string
+	- .upper() returns uppercase of the string
+
 
 ### Custom functions
 
