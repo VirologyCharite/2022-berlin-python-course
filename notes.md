@@ -85,6 +85,19 @@ To get the newest version of the repo use
 git pull
 ```
 
+## add files to version control
+```shell
+git add "file or folder"
+```
+
+## commit changes
+```shell
+git commit
+```
+Options
+	- -a commits all files that have ever been added via git add 
+
+
 ## add new files
 
 # Python
