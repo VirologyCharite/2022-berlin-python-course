@@ -15,7 +15,7 @@ Here is the code we wrote for the Python course.
 * Indentation - whitespace at the start of a line of code
 * string - a sequence of letters, like "hello"
 * flow-of-control - Python keywords that determine the order in which the code is run
-* markdown - a simple text file format for writing documentation like this. [More info here](http://markdown.org).
+* markdown - a simple text file format for writing documentation like this. [More info here](https://www.markdownguide.org/).
 
 ### Important
 
