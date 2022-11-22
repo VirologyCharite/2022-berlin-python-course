@@ -71,6 +71,8 @@
 	- times the command that follows
 - `cp old_name new_name`
 	- = copy
+- `ssh-add`
+	- Adds a ssh-key to the key manager. You can confirm that the agent runs via 
 
 # Git
 ## Cloning a repository
@@ -90,6 +92,11 @@ git pull
 git add "file or folder"
 ```
 
+## status
+```shell
+git status
+```
+
 ## commit changes
 ```shell
 git commit
@@ -97,6 +104,11 @@ git commit
 Options
 	- -a commits all files that have ever been added via git add 
 
+## push changes to the github repo
+Can only be done after a commit
+```shell
+git push
+```
 
 ## add new files
 
@@ -104,7 +116,7 @@ Options
 
 ## Core functionality
 
-### Data structures
+### Data structures and types
 #### sets
 
 Sets are grups of items that cannot contain duplicates. It is very fast to check if an item is already in a set.
@@ -116,6 +128,45 @@ Example
  names.add("Eva")
  names.add("Eva") # will not be added again
 ```
+
+#### dictionaries
+
+Dictionaries are a bunch of keys paired to values.
+The dictionary has a hash table associated to it or is a hash table or whatever, but this makes the lookup really fast
+Example:
+```python 
+import sys
+
+# To create a dictionary write
+wordCoundts = {}
+
+# the program reads the console input and loops though its lines
+for line in sys.stdin:
+	# it then loops through lines 
+	for word in line.split():
+		if word in wordCounts:
+			# To access a dictionary by its key, write the dictionary name and in [] the key
+			wordCounts[word] = wordCounts[word] + 1 
+		else:
+			wordCounts[word] = 1
+```
+
+
+#### list
+
+```python
+example_list = []
+```
+
+Lists can be accesses by writing the variable name and in `[]` the number of the item, for example `example_list[1]`
+
+Methods
+	- append() adds an element of the list 
+
+#### strings
+Methods
+	- split(seperator) 
+	- ", ".join(list)   merges the elemtns of the list with the string between items of the list
 
 ### Custom functions
 
@@ -158,6 +209,10 @@ for number in range(end_value):
 
 ```
 
+### len function
+`len()` outputs the length of a list, dictionary, set or string
+
+
 ### f-strings
 
 f-strings can contain variables in curled brackets. They are written with
@@ -165,6 +220,12 @@ an f before the quotes surrounding the string
 
 ```python
 print(f"Variable 1 has the value: {variable_1}")
+```
+
+To print a raw representation of a variable put `!r` after a variable
+
+```python
+print(f"Variable 1 has the value: {variable_1!r}")
 ```
 
 ## Flow of control
