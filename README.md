@@ -18,6 +18,7 @@ Here is the code we wrote for the Python course.
 * markdown - a simple text file format for writing documentation like this. [More info here](https://www.markdownguide.org/).
 * variable
 * Iterator
+* Pipe `|` (this is a shell metacharacter that causes the shell to send the output from the command on the left into the one on the right).
 
 ### Important
 
@@ -31,7 +32,6 @@ Here is the code we wrote for the Python course.
 ### Git & GitHub
 
 * A bit more git
-* ssh key setup
 
 ### Clusters
 

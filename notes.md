@@ -136,7 +136,7 @@ f-strings can contain variables in curled brackets. They are written with
 an f before the quotes surrounding the string
 
 ```python
-print(f("Variable 1 has the value: {variable_1}"))
+print(f"Variable 1 has the value: {variable_1}")
 ```
 
 ## Flow of control
