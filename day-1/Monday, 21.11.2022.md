@@ -72,6 +72,7 @@
 
 # Python
 ## Core functionality
+
 ### Data structures
 #### sets
 Sets are grups of items that cannot contain duplicates. It is very fast to check if an item is already in a set.
@@ -85,7 +86,6 @@ Example
 
 
 ### Custom functions
-
 ```python
 #define the function
 def calculateToFarenheit(c):
@@ -95,7 +95,7 @@ def calculateToFarenheit(c):
 print("100°C is equal to: ", calculateToFarenheit(100), "° F")
 ```
 
-## import
+### import
 load a package. You can either load a complete package or a module from a package 
 ```python
 # import complete package
@@ -108,7 +108,7 @@ SeqIO.parse(sys.stdin, "fasta")
 ```
 
 
-## range function
+### range function
 range() returns a so-called iterator that provides the next number in the range everytime its called.
 Python does not include end_value so for example range(10, 20) is the number range \[10, 19\].
 ```python
@@ -119,6 +119,12 @@ for number in range(start_value,end_value):
 for number in range(end_value):
 	print(number)
 
+```
+
+### f-strings
+f-strings can contain variables in curled brackets. They are written with an f before the quotes surrounding the string
+```python
+print(f("Variable 1 has the value: {variable_1}"))
 ```
 
 ## Flow of control
@@ -159,12 +165,6 @@ else
 ```
 
 
-## String formatting
-### f-strings
-f-strings can contain variables in curled brackets. They are written with an f before the quotes surrounding the string
-```python
-print(f("Variable 1 has the value: {variable_1}"))
-```
 
 ## sys package
 The sys package contains some basic functions to interact with the system
