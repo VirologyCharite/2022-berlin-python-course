@@ -16,6 +16,8 @@ Here is the code we wrote for the Python course.
 * string - a sequence of letters, like "hello"
 * flow-of-control - Python keywords that determine the order in which the code is run
 * markdown - a simple text file format for writing documentation like this. [More info here](https://www.markdownguide.org/).
+* variable
+* Iterator
 
 ### Important
 
