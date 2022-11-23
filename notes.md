@@ -14,6 +14,10 @@
 	- Sends output from one program to another
 - `<` symbol
 	- sends the content of the file after the `<` into the standard input of the next program. E.g. `wc < file.py`.
+- `>` 
+	- write (and potentially overwrite) output in a file
+- `>>`
+	- append output to a file
 
 ## Programs
 - `man "command"`
@@ -80,6 +84,8 @@
 	- options
 		- -d deletes the following characters from the input
 		- -dc delete everything but
+- `comm file1 file2`
+	- compares 2 (sorted) list. The output is 3 columns, the first is lines unique to file1, the second to file2 and the third lines that occur in both 
 
 ### More shell commands
 
@@ -101,6 +107,8 @@ Add two directories to the start of your PATH
 ```sh
 PATH=.:$HOME/bin:$PATH
 ```
+
+float are floating point numbers.
 
 * chmod - change mode of a file (or directory)
 * history
@@ -186,6 +194,15 @@ git push
 # Python
 
 ## Core functionality
+### Error handling / Exceptions
+Exceptions are unexpected errors that make the program stop. You can catch errors by
+```python
+try:
+	number1, number2 = command.split()[1:]
+except ValueError:
+	print("There was a value error")
+```
+
 
 ### Data structures and types
 #### sets
@@ -229,7 +246,7 @@ for line in sys.stdin:
 example_list = []
 ```
 
-Lists can be accesses by writing the variable name and in `[]` the number of the item, for example `example_list[1]`
+Lists can be accesses by writing the variable name and in `[]` the number of the item, for example `example_list[1]`. You can also access sublists by proving a range, like `example_list[0:3]` or to access the last elements starting from element 4 `example_list[3:]`  
 
 Methods
 	- append() adds an element of the list 
@@ -241,6 +258,13 @@ Methods
 	- .lower() returns lowercase of the string
 	- .upper() returns uppercase of the string
 
+#### integers
+Full numbers.
+Strings can be converted into integers by `int()`
+
+#### float
+Natural number.
+Strings can be converted into integers by `float()`
 
 ### Custom functions
 
@@ -287,6 +311,13 @@ for number in range(end_value):
 `len()` outputs the length of a list, dictionary, set or string
 
 
+### input
+
+```python
+variable = input('Input prompt')
+```
+Waits for input from the console. Once the input is given, the input is saved in variable
+
 ### f-strings
 
 f-strings can contain variables in curled brackets. They are written with
@@ -313,7 +344,6 @@ for line in sys.stdin:
 	print(line)
 ```
 
-You can skip one iteration of a loop you can use the `continue` statement
 
 You can also nest loops like this
 
@@ -323,6 +353,13 @@ for number1 in 1,2,3,4,5:
 	for number2 in 1,2,3,4:
 		print("   ","Number 2: ", number2)
 ```
+### while loop
+```python
+while count < 20 :
+	print(count)
+	count = count + 1
+```
+A loop can be exited by using the `break` statement and one iteration can be skipped by using the `continue` statement.
 
 ### if statement
 
