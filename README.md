@@ -6,6 +6,7 @@ Here is the code we wrote for the Python course.
 
 ### Todo
 
+* `/tmp`
 * Revise new words
 * Additional data structures: `list`, `dict`
 * Additional flow-of-control: `while`
