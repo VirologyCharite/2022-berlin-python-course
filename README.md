@@ -19,19 +19,19 @@ Here is the code we wrote for the Python course.
 * variable
 * Iterator
 * Pipe `|` (this is a shell metacharacter that causes the shell to send the output from the command on the left into the one on the right).
+* IDE - Integrated Development Environment
+* Interpreted language: A program that prints a prompt, reads your commands and executes them, one by one (as oppsed to "compiled" languages).
+* REPL - Read evaluate prompt loop
 
 ### Important
 
 * Indentation is important in Python!
 * Read the Python error messages!
 
-### Shell commands
-
-* cd `.` and `..`
-
 ### Git & GitHub
 
 * A bit more git
+* diff, status, add, commit, push, pull
 
 ### Clusters
 
@@ -39,5 +39,11 @@ Here is the code we wrote for the Python course.
 
 ### Python
 
+* While loop
 * functions
 * classes
+* Jupyter
+* pandas (Leonie)
+
+### Testing
+

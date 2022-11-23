@@ -81,6 +81,69 @@
 		- -d deletes the following characters from the input
 		- -dc delete everything but
 
+### More shell commands
+
+Metacharacters - *, [], etc.
+
+* `*` is for matching multiple things
+* `{word1,word2,word3}xxx` expands to the three words, each followed by `xxx`.
+* `[xyz]` matches any of `x` `y` or `z`.
+
+`echo $PATH` - see the directories in your shell's path (where it looks for
+commands). I.e., `PATH` is a list of directories that your shell will look
+in when you type a command.
+
+Variables are not expanded inside hard quotes (`'`) but they are in soft
+quotes (`"`).
+
+Add two directories to the start of your PATH
+
+```sh
+PATH=.:$HOME/bin:$PATH
+```
+
+* chmod - change mode of a file (or directory)
+* history
+* mkdir - make a new directory
+* cd `.` and `..`
+* cp, rm, mv, mkdir
+* grep
+* cut
+* echo
+* cat
+* less
+* tr
+* awk
+* sed
+
+* perl
+* test
+* make
+* tmux
+* paste
+* comm
+
+
+### Shell command line editing keystrokes
+
+* Control-a takes you to the beginning of the line
+* Control-e takes you to the end of the line
+* Control-r incremental reverse search of your command history
+* Control-y yank back killed (deleted text)
+* Alt-. insert the last word from the previous command
+* Control-k kill (delete) the characters to the end of the line
+
+* Control-f move forward one character
+* Alt-f move forward one word
+
+* Control-b move backward one character
+* Alt-b move backward one word
+
+* Control-d delete one character
+* Alt-d delete one word (after the cursor)
+* Alt-backspace delete the word before the cursor
+
+
 
 # Git
 ## Cloning a repository
@@ -321,7 +384,6 @@ Provide arguments from the shell
 python3 script.py --translate
 ```
 This will print "translate True"
-
 
 
 ## Biopython package
