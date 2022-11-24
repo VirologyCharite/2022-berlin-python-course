@@ -4,7 +4,16 @@ import getpass
 
 def generateHangy(guess_count, max_guesses):
     step = int(guess_count/max_guesses*4)
+
     if step < 2:
+        hangy = """
+|
+|
+|
+        
+        """
+
+    elif step < 3:
         hangy = """
 |
 |
@@ -14,7 +23,7 @@ def generateHangy(guess_count, max_guesses):
 |
         
         """
-    elif step < 3:
+    elif step < 4:
         hangy = """
  ___
 |   
@@ -24,7 +33,7 @@ def generateHangy(guess_count, max_guesses):
 |  
 |
         """
-    elif step == 3:
+    elif step == 5:
         hangy = """
  ___
 |   |
@@ -34,7 +43,7 @@ def generateHangy(guess_count, max_guesses):
 |  
 |
         """  
-    elif step == 4:
+    elif step == 6:
         hangy = """
  ___
 |   |
