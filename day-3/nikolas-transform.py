@@ -9,7 +9,7 @@ from collections import Counter
 def loadNames():
     names = {}
 
-    with open("../niklas_problem/annotations/all.csv") as fp:
+    with open("../niklas_problem/annotations/all.csv") as fp: # Why do it like this
         reader = csv.reader(fp, delimiter=",")
 
         for fields in reader:
@@ -24,11 +24,13 @@ def loadNames():
 
 
 def relabelTree(filename, newNames):
-    tree = Tree(filename, format=1)
 
     missCount = 0
     speciesCounts = Counter()
 
+
+
+    tree = Tree(filename, format=1)
     for leaf in tree.get_leaves():
         fields = leaf.name.split("_")
         assert len(fields) == 4
@@ -50,7 +52,7 @@ def relabelTree(filename, newNames):
 
     return speciesCounts
 
-
+# test
 def main():
     newNames = loadNames()
     speciesCounts = Counter()
