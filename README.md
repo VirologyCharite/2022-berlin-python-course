@@ -6,13 +6,11 @@ Here is the code we wrote for the Python course.
 
 ### Todo
 
-* `/tmp`
-* Revise new words
-* Additional data structures: `list`, `dict`
-* Additional flow-of-control: `while`
+* Jupyter notebooks
 
 ### Terminology
 
+* API - application programmer interface
 * Indentation - whitespace at the start of a line of code
 * string - a sequence of letters, like "hello"
 * flow-of-control - Python keywords that determine the order in which the code is run
