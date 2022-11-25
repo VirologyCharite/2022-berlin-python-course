@@ -48,3 +48,7 @@ the branch.
 ### Switch back to previous branch
 
 `git checkout -`
+
+### Delete a branch locally 
+
+`git branch -D BRANCH-NAME`
